@@ -1,4 +1,4 @@
-_Pizza-pro}_
+_Pizza-pro_
 
 #### _{Webpage with interactive form}, {21 July 2017}_
 
@@ -11,18 +11,21 @@ _{The site was developed to create an application that would pizza ordering site
 ## Specifications
 _Specs from Pizza-pro
 
-*It will count to a provided number.
-  _Input Example: 2
-  _Output Example: [1,2]
-*It will substitute a number divisible by 3 with "ping".
-  _Input Example: 3
-  _Output Example: [1,2,"ping"]
-*It will substitute a number divisible by 5 with "pong".
-  _Input Example: 5
-  _Output Example: [1,2,"ping",4,"pong"]
-*It will substitute a number divisible by 15 with  "ping-pong".
-  _Input Example: 15
-  _Output Example: [1,2,"ping",4,"pong","ping",7,8,"ping","pong",11,"ping",13,14,"ping-pong"]  
+* It will select a size of pizza w/pricing.
+  * _Input Example: small
+  * _Output Example: 6.25
+* It will select a crust for pizza w/pricing.
+  * _Input Example: thin
+  * _Output Example: 2.00
+* It will select a sauce for pizza w/pricing.
+  * _Input Example: red sauce
+  * _Output Example: 2.00
+* It will accept toppings input w/pricing.
+  * _Input Example: no input
+  * _Output Example: .50
+* It will calculate total cost based on selections.
+  * _Input Example: small, thin, red sauce, no toppings
+  * _Output Example: 10.75
 
 ## Setup/Installation Requirements
 

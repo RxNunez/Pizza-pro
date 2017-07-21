@@ -41,7 +41,7 @@ Pizza.prototype.price = function () {
 }
 
 Pizza.prototype.ordersize = function () {
-  if (this.crust === "small" || this.crust === "medium") {
+  if (this.size === "small" || this.size === "medium") {
     return 6.25
   } else {
     return 8.25
