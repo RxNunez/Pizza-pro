@@ -11,9 +11,6 @@ $(document).ready(function() {
 
   $("#pizza-price").text(newPizza.price());
   // add delivery
-  // $(function(results){
-  // $("#result").append("<li>" + results + "</li>")
-
   // var inputtedfirstName = $("input#firstName").val();
   // var inputtedlastName = $("input#lastName").val();
   // var inputtedstreet = $("input#street").val();
@@ -21,6 +18,11 @@ $(document).ready(function() {
   // var inputtedcity = $("input#city").val();
   // var inputtedstate = $("input#state").val();
   // var inputtedzip = $("input#zip").val();
+  //
+  // var newDelivery = new Delivery(inputtedfirstName, inputtedlastName, inputtedstreet, inputtedaptNumber, inputtedcity, inputtedstate, inputtedzip)
+
+  // $(function(delivery){
+  // $("#receipt").append("<li>" + results + "</li>")
 
   // $("#receipt").show();
 
@@ -71,3 +73,12 @@ Pizza.prototype.orderToppings = function () {
     return 3.00
   }
 }
+// function Delivery(firstName, lastName, street, aptNumber, city, state, zip) {
+//   this.firstName = firstName;
+//   this.lastName = lastName;
+//   this.street = street;
+//   this.aptNumber = aptNumber;
+//   this.city = city;
+//   this.city = state;
+//   this.city = zip;
+// }
