@@ -9,3 +9,6 @@ body{
   background-repeat: no-repeat;
   height: 100%;
 }
+#receipt {
+  display: none;
+}

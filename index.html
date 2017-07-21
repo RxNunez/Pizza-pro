@@ -12,7 +12,7 @@
       <h1>Make your pizza!</h1>
       <form id="pizza">
         <div id="size">
-          <h2>Choose a size:</h2>
+          <h3>Choose a size:</h3>
           <div class="radio">
             <label>
               <input type="radio" name="size" value="large" checked>
@@ -34,7 +34,7 @@
         </div>
         <br>
         <div id="crust">
-          <h2>Choose a crust:</h2>
+          <h3>Choose a crust:</h3>
           <div class="radio">
           <label>
             <input type="radio" name="crust" value="thin" checked>
@@ -54,12 +54,14 @@
             </label>
           </div>
         </div>
+        <h3>Choose a sauce:</h3>
         <select class="form-control" id="sauce">
           <option>White sauce</option>
           <option>Red sauce</option>
           <option>No sauce</option>
         </select>
         <div class="form-group">
+          <h3>Toppings:</h3>
           <label for="toppings">Enter up to five toppings:</label>
           <input id="toppings" class="form-control" type="text">
         </div>
@@ -107,18 +109,20 @@
           </div>
         </div>
         <button type="submit" class="btn-success">Submit order</button>
+        <input type="button" class="btn-danger" value="New or Change Order!" onClick="window.location.reload()">
         </form>
-        <h2>Pizza Price:</h2>
-          <ul id="pizza-price">
+        <div class="show-price">
+         <h2>Pizza Price:</h2>
+         <h4>$<span<ul id="pizza-price"></ul></span></h4>
 
-          </ul>
-        <!-- <div id="receipt">
-          <p>Thank you <span class="firstName"></span> <span class="lastName"></span> for your order!</p>
-          <p>Your order of a <span class="size"></span>,<span class="crust"></span> pizza with <span class="sauce"></span> and <span class="toppings"></span> toppings will be delivered to the following address:</p>
+       </div>
+        <div id="receipt">
+          <p>Thank you <span id="firstName"></span> <span id="lastName"></span> for your order!</p>
+          <p>Your order of a <span id="size"></span>,<span id="crust"></span> pizza with <span id="sauce"></span> and <span id="toppings"></span> toppings will be delivered to the following address:</p>
           <p><span class="street"></span></p>
           <p> Apt # <span class="aptNumber"></span></p>
           <p><span class="city"></span>, <span class="state"></span>, <span class="zip"></span></p>
-        </div> -->
+        </div>
     </div>
   </body>
 </html>

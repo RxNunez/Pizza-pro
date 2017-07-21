@@ -1,7 +1,7 @@
 // U/I logic
 $(document).ready(function() {
   $("#pizza").submit(function(event) {
-  $("#result").empty();
+  $("#pizza-price").empty();
   var inputtedsize = $("input:radio[name=size]:checked").val();
   var inputtedcrust = $("input:radio[name=crust]:checked").val();
   var inputtedsauce = $("#sauce").val();
@@ -10,14 +10,17 @@ $(document).ready(function() {
   var newPizza = new Pizza(inputtedsize, inputtedcrust, inputtedsauce, inputtedtoppings)
 
   $("#pizza-price").text(newPizza.price());
+  // add delivery
+  // $(function(results){
+  // $("#result").append("<li>" + results + "</li>")
 
-  // .text($("input#firstName").val());
-  // .text($("input#lastName").val());
-  // .text($("input#street").val());
-  // .text($("input#aptNumber").val());
-  // .text($("input#city").val());
-  // .text($("input#state").val());
-  // .text($("input#zip").val());
+  // var inputtedfirstName = $("input#firstName").val();
+  // var inputtedlastName = $("input#lastName").val();
+  // var inputtedstreet = $("input#street").val();
+  // var inputtedaptNumber = $("input#aptNumber").val();
+  // var inputtedcity = $("input#city").val();
+  // var inputtedstate = $("input#state").val();
+  // var inputtedzip = $("input#zip").val();
 
   // $("#receipt").show();
 
@@ -39,9 +42,9 @@ Pizza.prototype.price = function () {
 
 Pizza.prototype.ordersize = function () {
   if (this.crust === "small" || this.crust === "medium") {
-    return 6.00
+    return 6.25
   } else {
-    return 8.00
+    return 8.25
   }
 }
 
@@ -68,7 +71,3 @@ Pizza.prototype.orderToppings = function () {
     return 3.00
   }
 }
-// user interface logic
-
-//     $("#ticket-cost").text(newMovie.price());
-//
