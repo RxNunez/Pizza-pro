@@ -1,22 +1,25 @@
 // U/I logic
 $(document).ready(function() {
   $("#pizza").submit(function(event) {
+  $("#result").empty();
   var inputtedsize = $("input:radio[name=size]:checked").val();
   var inputtedcrust = $("input:radio[name=crust]:checked").val();
   var inputtedsauce = $("#sauce").val();
-  var inputtedtoppings = .text($("#toppings").val());
+  var inputtedtoppings = $("#toppings").val();
 
   var newPizza = new Pizza(inputtedsize, inputtedcrust, inputtedsauce, inputtedtoppings)
 
-  // $(".firstName").text($("input#firstName").val());
-  // $(".lastName").text($("input#lastName").val());
-  // $(".street").text($("input#street").val());
-  // $(".aptNumber").text($("input#aptNumber").val());
-  // $(".city").text($("input#city").val());
-  // $(".state").text($("input#state").val());
-  // $(".zip").text($("input#zip").val());
+  $("#pizza-price").text(newPizza.price());
 
-  $("#receipt").show();
+  // .text($("input#firstName").val());
+  // .text($("input#lastName").val());
+  // .text($("input#street").val());
+  // .text($("input#aptNumber").val());
+  // .text($("input#city").val());
+  // .text($("input#state").val());
+  // .text($("input#zip").val());
+
+  // $("#receipt").show();
 
     event.preventDefault();
   });
@@ -62,21 +65,10 @@ Pizza.prototype.orderToppings = function () {
   if (this.toppings === "") {
     return .50
   } else {
-    return 2.00
+    return 3.00
   }
 }
-}
 // user interface logic
-$(document).ready(function() {
-  $("form#movie-selection").submit(function(event) {
-    event.preventDefault();
 
-
-
-
-    $("#ticket-cost").text(newMovie.price());
-
-
-
-  });
-});
+//     $("#ticket-cost").text(newMovie.price());
+//

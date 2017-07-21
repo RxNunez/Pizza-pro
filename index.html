@@ -10,43 +10,49 @@
   <body>
     <div class="container main">
       <h1>Make your pizza!</h1>
-      <div>
-        <form id="pizza">
+      <form id="pizza">
+        <div id="size">
+          <h2>Choose a size:</h2>
           <div class="radio">
-          <label>
-            <input type="radio" name="crust" value="large" checked>
-            LARGE!
-          </label>
+            <label>
+              <input type="radio" name="size" value="large" checked>
+              LARGE!
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="size" value="medium">
+              Medium
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="size" value="small">
+              small
+            </label>
+          </div>
         </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="crust" value="medium">
-            Medium
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="crust" value="small">
-            small
-          </label>
-        </div>
+        <br>
+        <div id="crust">
+          <h2>Choose a crust:</h2>
           <div class="radio">
           <label>
             <input type="radio" name="crust" value="thin" checked>
             Thin crust
           </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="crust" value="regular">
-            Regular
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="crust" value="thick">
-            Thick crust
-          </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="crust" value="regular">
+              Regular
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="crust" value="thick">
+              Thick crust
+            </label>
+          </div>
         </div>
         <select class="form-control" id="sauce">
           <option>White sauce</option>
@@ -102,13 +108,17 @@
         </div>
         <button type="submit" class="btn-success">Submit order</button>
         </form>
-        <div id="receipt">
+        <h2>Pizza Price:</h2>
+          <ul id="pizza-price">
+
+          </ul>
+        <!-- <div id="receipt">
           <p>Thank you <span class="firstName"></span> <span class="lastName"></span> for your order!</p>
-          <p>Your order of <span class="crust"></span> pizza with <span class="sauce"></span> and <span class="toppings"></span> toppings will be delivered to the following address:</p>
+          <p>Your order of a <span class="size"></span>,<span class="crust"></span> pizza with <span class="sauce"></span> and <span class="toppings"></span> toppings will be delivered to the following address:</p>
           <p><span class="street"></span></p>
           <p> Apt # <span class="aptNumber"></span></p>
           <p><span class="city"></span>, <span class="state"></span>, <span class="zip"></span></p>
-        </div>
+        </div> -->
     </div>
   </body>
 </html>
