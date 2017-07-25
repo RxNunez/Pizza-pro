@@ -10,126 +10,113 @@
   <body>
     <div class="container main">
       <div class="well">
-      <h1>Make your pizza!</h1>
-      <form id="pizza">
-        <div id="size">
-          <h3>Choose a size:</h3>
-          <div class="radio">
-            <label>
-              <input type="radio" name="size" value="large" checked>
-              LARGE!
-            </label>
+        <h1>Make your pizza!</h1>
+        <form id="pizza">
+          <div id="size">
+            <h3>Choose a size:</h3>
+            <div class="radio">
+              <label>
+                <input type="radio" name="size" value="large" checked>
+                LARGE!
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="size" value="medium">Medium
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="size" value="small">small
+              </label>
+            </div>
           </div>
-          <div class="radio">
-            <label>
-              <input type="radio" name="size" value="medium">
-              Medium
-            </label>
+          <br>
+          <div id="crust">
+            <h3>Choose a crust:</h3>
+            <div class="radio">
+              <label>
+                <input type="radio" name="crust" value="thin" checked>
+                Thin crust
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="crust" value="regular">
+                Regular
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="crust" value="thick">
+                Thick crust
+              </label>
+            </div>
           </div>
-          <div class="radio">
-            <label>
-              <input type="radio" name="size" value="small">
-              small
-            </label>
-          </div>
-        </div>
-        <br>
-        <div id="crust">
-          <h3>Choose a crust:</h3>
-          <div class="radio">
-          <label>
-            <input type="radio" name="crust" value="thin" checked>
-            Thin crust
-          </label>
-          </div>
-          <div class="radio">
-            <label>
-              <input type="radio" name="crust" value="regular">
-              Regular
-            </label>
-          </div>
-          <div class="radio">
-            <label>
-              <input type="radio" name="crust" value="thick">
-              Thick crust
-            </label>
-          </div>
-        </div>
-        <h3>Choose a sauce:</h3>
-        <select class="form-control" id="sauce">
-          <option>White sauce</option>
-          <option>Red sauce</option>
-          <option>No sauce</option>
-        </select>
-        <div class="form-group">
-          <h3>Toppings:</h3>
-          <label for="toppings">Enter up to five toppings:</label>
-          <input id="toppings" class="form-control" type="text">
-        </div>
-      </div>
-        <div id="nameAddress">
-          <div class="well">
-        <h2>Please enter your information</h2>
-        <div class="form-group">
-          <label for="firstName">First name</label>
-          <input id="firstName" class="form-control" type="text">
-        </div>
-        <div class="form-group">
-          <label for="lastName">Last name</label>
-          <input id="lastName" class="form-control" type="text">
-        </div>
-        <div class="row">
-          <div class="col-md-4">
+          <h3>Choose a sauce:</h3>
+            <select class="form-control" id="sauce">
+              <option>White sauce</option>
+              <option>Red sauce</option>
+              <option>No sauce</option>
+            </select>
           <div class="form-group">
-            <label for="street">Street address</label>
-            <input id="street" class="form-control" type="text">
+            <h3>Toppings:</h3>
+            <label for="toppings">Enter up to five toppings:</label>
+            <input id="toppings" class="form-control" type="text">
           </div>
-        </div>
-          <div class="col-md-2">
-          <div class="form-group">
-            <label for="aptNumber">Apartment #</label>
-            <input id="aptNumber" class="form-control" type="text">
+          <div id="nameAddress" class="well">
+            <h2>Please enter your information</h2>
+            <div class="form-group">
+              <label for="firstName">First name</label>
+              <input id="firstName" class="form-control" type="text">
+            </div>
+            <div class="form-group">
+              <label for="lastName">Last name</label>
+              <input id="lastName" class="form-control" type="text">
+            </div>
+            <div class="row">
+              <div class="col-md-4">
+                <div class="form-group">
+                  <label for="street">Street address</label>
+                  <input id="street" class="form-control" type="text">
+                </div>
+              </div>
+              <div class="col-md-2">
+                <div class="form-group">
+                  <label for="aptNumber">Apartment #</label>
+                  <input id="aptNumber" class="form-control" type="text">
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-3">
+                <div class="form-group">
+                  <label for="city">City</label>
+                  <input id="city" class="form-control" type="text">
+                </div>
+              </div>
+              <div class="col-md-1">
+                <div class="form-group">
+                  <label for="state">State</label>
+                  <input id="state" class="form-control" type="text">
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="form-group">
+                  <label for="zip">Zip code</label>
+                  <input id="zip" class="form-control" type="text">
+                </div>
+              </div>
+            </div>
           </div>
+            <button type="submit" class="btn-success">Submit order</button>
+            <input type="button" class="btn-danger" value="New or Change Order!" onClick="window.location.reload()">
           </div>
-        </div>
-        <div class="row">
-          <div class="col-md-3">
-          <div class="form-group">
-            <label for="city">City</label>
-            <input id="city" class="form-control" type="text">
-          </div>
-        </div>
-          <div class="col-md-1">
-          <div class="form-group">
-            <label for="state">State</label>
-            <input id="state" class="form-control" type="text">
-          </div>
-          </div>
-          <div class="col-md-3">
-          <div class="form-group">
-            <label for="zip">Zip code</label>
-            <input id="zip" class="form-control" type="text">
-          </div>
-          </div>
-          </div>
-        </div>
-        </div>
-        <button type="submit" class="btn-success">Submit order</button>
-        <input type="button" class="btn-danger" value="New or Change Order!" onClick="window.location.reload()">
         </form>
         <div class="show-price-address">
-         <h2>Pizza Price:</h2>
-         <h4>$<span<ul id="pizza-price"></ul></span></h4>
-         <!-- <h2>Deliver Address:</h2>
-            <ul id="address"></ul> -->
-       </div>
-        <!-- <div id="receipt">
-          <p>Thank you <span id="firstName"></span> <span id="lastName"></span> for your order!</p>
-          <p>Your order of a <span id="size"></span>,<span id="crust"></span> pizza with <span id="sauce"></span> and <span id="toppings"></span> toppings will be delivered to the following address:</p>
-          <p><span class="street"></span></p>
-          <p> Apt # <span class="aptNumber"></span></p>
-          <p><span class="city"></span>, <span class="state"></span>, <span class="zip"></span></p>
-        </div> -->
+          <h2>Pizza Price:</h2>
+          <h4>$<span<ul id="pizza-price"></ul></span></h4>
+        </div>
     </div>
   </body>
 </html>

@@ -1,31 +1,15 @@
 // U/I logic
 $(document).ready(function() {
   $("#pizza").submit(function(event) {
-  $("#pizza-price").empty();
-  var inputtedsize = $("input:radio[name=size]:checked").val();
-  var inputtedcrust = $("input:radio[name=crust]:checked").val();
-  var inputtedsauce = $("#sauce").val();
-  var inputtedtoppings = $("#toppings").val();
+    $("#pizza-price").empty();
+    var inputtedsize = $("input:radio[name=size]:checked").val();
+    var inputtedcrust = $("input:radio[name=crust]:checked").val();
+    var inputtedsauce = $("#sauce").val();
+    var inputtedtoppings = $("#toppings").val();
 
-  var newPizza = new Pizza(inputtedsize, inputtedcrust, inputtedsauce, inputtedtoppings)
+    var newPizza = new Pizza(inputtedsize, inputtedcrust, inputtedsauce, inputtedtoppings)
 
-  $("#pizza-price").text(newPizza.price());
-  // add delivery
-  // var inputtedfirstName = $("input#firstName").val();
-  // var inputtedlastName = $("input#lastName").val();
-  // var inputtedstreet = $("input#street").val();
-  // var inputtedaptNumber = $("input#aptNumber").val();
-  // var inputtedcity = $("input#city").val();
-  // var inputtedstate = $("input#state").val();
-  // var inputtedzip = $("input#zip").val();
-  //
-  // var newDelivery = new Delivery(inputtedfirstName, inputtedlastName, inputtedstreet, inputtedaptNumber, inputtedcity, inputtedstate, inputtedzip)
-
-  // $(function(delivery){
-  // $("#receipt").append("<li>" + results + "</li>")
-
-  // $("#receipt").show();
-
+    $("#pizza-price").text(newPizza.price());
     event.preventDefault();
   });
 });
@@ -73,12 +57,3 @@ Pizza.prototype.orderToppings = function () {
     return 3.00
   }
 }
-// function Delivery(firstName, lastName, street, aptNumber, city, state, zip) {
-//   this.firstName = firstName;
-//   this.lastName = lastName;
-//   this.street = street;
-//   this.aptNumber = aptNumber;
-//   this.city = city;
-//   this.city = state;
-//   this.city = zip;
-// }

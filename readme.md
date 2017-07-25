@@ -15,14 +15,14 @@ _Specs from Pizza-pro
   * _Input Example: small
   * _Output Example: 6.25
 * It will select a crust for pizza w/pricing.
-  * _Input Example: thin
-  * _Output Example: 2.00
+  * _Input Example: small, thin
+  * _Output Example: 8.25
 * It will select a sauce for pizza w/pricing.
-  * _Input Example: red sauce
-  * _Output Example: 2.00
+  * _Input Example: small, thin, red sauce
+  * _Output Example: 10.25
 * It will accept toppings input w/pricing.
-  * _Input Example: no input
-  * _Output Example: .50
+  * _Input Example: small, thin, red sauce, no input
+  * _Output Example: 10.75
 * It will calculate total cost based on selections.
   * _Input Example: small, thin, red sauce, no toppings
   * _Output Example: 10.75
